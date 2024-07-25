@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+}
+.container-backgroud {
+    display: flex;
+   
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(255, 247, 173, 1) 14%, rgba(255, 169, 249, 1) 60%);
+
+}
+
+.background {
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    
+}
+.background img{
+    height: 100vh;
+}
+
+
+header {
+    display: flex;
+    background-color: #E96479;
+    position: fixed;
+    width: 740px;
+    border-radius: 0 50px 50px 0;
+    height: 70px;
+    margin-top: 30px;
+    padding-left: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.button-home {
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.button-home:hover {
+    color: rgb(41, 36, 36);
+    opacity: 0.8;
+    border-bottom: dashed 1px;
+}
+
+.container {
+    min-height: calc(100vh - 23px);
+    width: 100vw;
+}
+
+.conteiner-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 23px);
+    
+    gap: 105px;
+    padding: 120px 50px 0;
+    text-align: center;
+}
+
+.name-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 500px;
+
+}
+
+.img-Logohome {
+    height: 450px;
+
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-size: 70px;
+}
+
+.name-home p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    max-width: 450px;
+    margin-top: 15px;
+
+}
+footer{
+    font-size: 15px;
+    font-weight: 100;
+    color: aliceblue;
+    background-color: #2e2c2c;
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    }
+    @media  screen and (max-width: 900px) {
+
+        .container-backgroud{
+            height: 100vh;
+        }
+        
+        header{
+            
+            width: 100%;
+            border-radius: 0;
+            height: 70px;
+            margin-top: 0;
+            padding-left: 10px;
+            padding-right: 10px; 
+            gap: 10px;
+           
+        }
+        .button-home{
+            font-size: 12px;
+           
+        text-align: center;
+    
+        }
+        .conteiner-home{
+            flex-direction: column;
+            gap:15px;
+            padding-right:10px;
+            padding-top: 0;
+           align-items: flex-end;
+
+
+        
+        }
+
+        .name-home{
+            width: 300px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        .img-Logohome{
+            height: 300px;
+        }
+
+        footer{
+            font-size: 10px;
+            
+        }
+
+        
+    }
+

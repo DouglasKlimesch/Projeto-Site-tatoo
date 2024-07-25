@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital@0;1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.container-about {
+    display: flex;
+    width: 100vw;
+    min-height: calc(100vh - 23px);
+    background: linear-gradient(90deg, rgba(141, 141, 141, 1) 0%, rgba(209, 204, 204, 1) 50%, rgba(111, 111, 111, 1) 100%);
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+
+}
+.background img{
+    height: 100vh;
+}
+
+
+header {
+    display: flex;
+    background-color: #E96479;
+    position: fixed;
+    width: 740px;
+    border-radius: 0 50px 50px 0;
+    height: 70px;
+    margin-top: 30px;
+    padding-left: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.button-home {
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.button-home:hover {
+    color: rgb(41, 36, 36);
+    opacity: 0.8;
+    border-bottom: dashed 1px;
+}
+
+
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    gap: 55px;
+    padding: 120px 50px 0;
+    text-align: center;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+    height: 450px;
+
+}
+
+#img-about {
+    height: 450px;
+
+}
+
+h3 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-size: 70px;
+    width: auto;
+}
+
+.about-me p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+   width: auto;
+    margin-top: 15px;
+
+}
+footer{
+    font-size: 15px;
+    font-weight: 100;
+    color: aliceblue;
+    background-color: #2e2c2c;
+    display: block;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    }
+
+    @media  screen and (max-width: 900px) {
+
+        .container-about{
+            height: auto;
+        }
+        
+        header{
+            position: absolute;
+            width: 100%;
+            border-radius: 0;
+            height: 70px;
+            margin-top: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            gap: 10px;
+           
+        }
+        .button-home{
+            font-size: 12px;
+           
+        text-align: center;
+    
+        }
+        .about {
+            flex-direction: column;
+            gap:0;
+            padding-right:10px;
+            padding-top: 33px;
+           align-items: flex-end;
+
+
+        
+        }
+
+        .about-me{
+            width: 258px;
+            height: auto;
+            align-items: flex-end;
+        }
+        h3{
+            font-size: 50px;
+            width: 200px;
+        }
+        p{
+            color: #000000;
+
+        }
+        #img-about{
+            height: 300px;
+            padding-top: 54px;
+        }
+
+        footer{
+            font-size: 10px;
+            position: fixed;
+            padding-left: 0;
+            
+        }
+
+        
+    }
+
